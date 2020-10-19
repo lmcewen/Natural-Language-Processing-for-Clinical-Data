@@ -75,7 +75,7 @@ We also set up our connection to the Google BigQuery project to be able to acces
 library(tidyverse)
 library(magrittr)
 library(bigrquery)
-
+#bq_auth()
 con <- DBI::dbConnect(drv = bigquery(),
                       project = "learnclinicaldatascience")
 radiology_reports <- tbl(con, "course4_data.radiology_reports") %>% 
